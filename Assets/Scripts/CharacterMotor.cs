@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class CharacterMotor : MonoBehaviour
 {
@@ -8,16 +9,19 @@ public class CharacterMotor : MonoBehaviour
     public float speed;
     private CharacterController controller;
     private Vector2 moveVector;
+    private PhotonView pv;
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        pv = GetComponent<PhotonView>();
     }
 
 
     private void FixedUpdate()
     {
+        if (!pv.IsMine) return;
         controller.Move(moveVector.normalized * speed);
     }
 
