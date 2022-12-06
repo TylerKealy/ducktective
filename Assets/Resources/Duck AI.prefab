@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48509e932cf76d644a3654cbf6569bdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motor: {fileID: 0}
+  motor: {fileID: 5356367922883718634}
   range: 0.1
   freq: 25
 --- !u!1001 &3094069510607294435
@@ -229,8 +229,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f43d8a5e3a302479a9069b44378f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myDuck: 1
+  myDuck: 0
   speed: 0.1
+--- !u!114 &5662916125561051817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7036418337410692283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!114 &6570920972222248557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,3 +261,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   motor: {fileID: 5356367922883718634}
   refreshRate: 1
+--- !u!114 &7749351905042789559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7036418337410692283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 5662916125561051817}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

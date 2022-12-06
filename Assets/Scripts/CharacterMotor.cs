@@ -21,7 +21,7 @@ public class CharacterMotor : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!pv.IsMine) return;
+        if (pv != null && !pv.IsMine) return;
         controller.Move(moveVector.normalized * speed);
     }
 

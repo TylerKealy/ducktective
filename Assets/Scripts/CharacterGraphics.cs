@@ -17,7 +17,7 @@ public class CharacterGraphics : MonoBehaviour
 
     void Update()
     {
-        if (!pv.IsMine) return;
+        if (pv != null && !pv.IsMine) return;
         if (motor.IsMoving()) {
             float offset = Mathf.Sin(Time.time * freq);
             transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y + range * offset, transform.position.z), .1f);
