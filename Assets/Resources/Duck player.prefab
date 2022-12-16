@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motor: {fileID: 7502246826710874478}
-  range: 0.1
+  range: 0.025
   freq: 25
 --- !u!1 &321127663
 GameObject:
@@ -298,6 +298,67 @@ MonoBehaviour:
   m_YawDamping: 0
   m_RollDamping: 0
   m_AngularDamping: 0
+--- !u!1 &4068461335372845856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7623408230795784216}
+  - component: {fileID: 1242530820624661512}
+  - component: {fileID: 2219376589430579989}
+  m_Layer: 0
+  m_Name: Coin collector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7623408230795784216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4068461335372845856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5352308968902977980}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242530820624661512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4068461335372845856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f13325ee1cdb574fb29d527f2446b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!70 &2219376589430579989
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4068461335372845856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06591737, y: 0.12845486}
+  m_Size: {x: 1.4899316, y: 1.5604655}
+  m_Direction: 0
 --- !u!1001 &2958001962416152257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -312,6 +373,14 @@ PrefabInstance:
     - target: {fileID: 7155049629373986685, guid: 46dfd36ea7fc8a74591c19bfbfd65e9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155049629373986685, guid: 46dfd36ea7fc8a74591c19bfbfd65e9b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155049629373986685, guid: 46dfd36ea7fc8a74591c19bfbfd65e9b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7155049629373986685, guid: 46dfd36ea7fc8a74591c19bfbfd65e9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -435,4 +504,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myDuck: 1
-  speed: 0.3
+  speed: 0.025

@@ -1,5 +1,66 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3446069365065593156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3767434316350281805}
+  - component: {fileID: 8388086561259186833}
+  - component: {fileID: 7332055093858296583}
+  m_Layer: 0
+  m_Name: Coin collector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3767434316350281805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3446069365065593156}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5312981374934530206}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8388086561259186833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3446069365065593156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f13325ee1cdb574fb29d527f2446b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!70 &7332055093858296583
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3446069365065593156}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06591737, y: 0.12845486}
+  m_Size: {x: 1.4899316, y: 1.5604655}
+  m_Direction: 0
 --- !u!1 &7351341369451755588
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motor: {fileID: 5356367922883718634}
-  range: 0.1
+  range: 0.025
   freq: 25
 --- !u!1001 &3094069510607294435
 PrefabInstance:
@@ -146,6 +207,14 @@ PrefabInstance:
     - target: {fileID: 7155049629373986685, guid: 46dfd36ea7fc8a74591c19bfbfd65e9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155049629373986685, guid: 46dfd36ea7fc8a74591c19bfbfd65e9b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155049629373986685, guid: 46dfd36ea7fc8a74591c19bfbfd65e9b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7155049629373986685, guid: 46dfd36ea7fc8a74591c19bfbfd65e9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -230,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myDuck: 0
-  speed: 0.1
+  speed: 0.025
 --- !u!114 &5662916125561051817
 MonoBehaviour:
   m_ObjectHideFlags: 0

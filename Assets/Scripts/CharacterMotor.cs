@@ -61,4 +61,7 @@ public class CharacterMotor : MonoBehaviour
     public Vector2 GetMoveVector() {
         return moveVector;
     }
+
+
+
 }
